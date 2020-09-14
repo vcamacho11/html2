@@ -4,25 +4,69 @@
 <style>
 	body {background-color:aliceblue;}
 	h2 {font-family:verdana}
+	a:hover {color: red; background-color: transparent; text-decoration: underline}
+	table, th, td {border: 1px solid black}
+	.frog {color:green}
+	#paragraph {color:rebeccapurple; }
 </style>
 <meta charset="utf-8">
 <title>HTML2</title>
 </head>
 
 <body>
+	<h1 style="font-family:verdana">Best Cities to see street art</h1>
+	<table style="width=100%">
+		<tr>
+	<th>Country</th>
+	<th>Cities</th>
+		</tr>
+		
+		<tr>
+	<td>USA</td>
+	<td>Sarasota, FL; New York; Bellingham,WA</td>
+		</tr>
+		
+		<tr>
+		<td>Brazil</td>
+		<td>Olinda; Sao Paulo; Rio De Janeiro</td>
+		</tr>
+		
+		<tr>
+		<td>France</td>
+		<td>Brest; Saint-Etienne, Frankrike; Cannes</td>
+		</tr>
+	</table>
+	<div class="frog">
+	<h2>More countries popular for street art</h2>
+	<ul style="list-style-type: circle">
+		<li>Germany</li>
+		<li>Denmark</li>
+		<li>London</li>
+		<li>Portugal</li>
+		<li>Colomia</li>
+		</ul>
+	</div>
+	<hr>
 	<h1 style="color:cadetblue;font-family:verdana">Street Art</h1>
-	<p>Plenty of art in the world to show that people don't often stumble across.</p>
+		
+	<p id="paragraph"> <b>Plenty of art in the world to show that people don't often stumble across.</b> </p>
+		
 	<h2 style="color:lightcoral;">Dolls in Dubai</h2>
-	<img src="images/dolls.jpg" alt="dolls on staircase" height="500p">
+	<img src="images/dolls.jpg" alt="dolls on staircase" height="400p">
 	<hr>
 	<h3 style="color:mediumpurple">Doors to Wonderland</h3>
-	<img src="images/doors.jpg" alt="doors" height="500p">
+	<img src="images/doors.jpg" alt="doors" height="400p">
 	<hr>
-	<h4 style="color:darkorchid">Rabbit in the street</h4>
-	<img src="images/rabbit.jpg" alt="rabbit on the phone" height="500p">
+	<h4 style="color:darkorchid;font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'">Rabbit in the street</h4>
+	<img src="images/rabbit.jpg" alt="rabbit on the phone" height="400p">
 	<hr>
-	<a href="https://unsplash.com/s/photos/street-art" target="_blank">This is the sit used to find these pictures</a>
-	
+	<a href="https://unsplash.com/s/photos/street-art" target="_blank">This is the site used to find these pictures</a><br>
+	<a href="morepictures.html">More pictures can be found here</a>
+	<p id="demo">Thanks for stopping by!</p>
+	<button type="button" onclick="myfunction()">Click Me!</button>
+	<script>
+	function myfunction() {document.getElementById("demo").innerHTML = "See ya!"}
+	</script>
 	
 	
 	
